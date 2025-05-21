@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page_structure>
+    <section name="Hero">
+        <layout_description>
+            Two-column layout. Text on the left, image on the right.
+            Recommended characters per line for text: N/A (depends on screen size)
+        </layout_description>
+        <content>
+            <text_group>
+                <text type="heading1">Managed MLflow</text>
+                <text type="subheading">Unified, End-to-End Platform for Generative AI, Deep Learning, and Classical ML</text>
+                <text type="body_intro">Build, evaluate, and monitor robust Generative AI applications and agents alongside your traditional machine learning models. Managed MLflow offers industry-leading tracing, prompt management, and evaluation capabilities, seamlessly integrated with its renowned experiment tracking and model management. Get started quickly by visiting our <link href="https://docs.databricks.com/aws/en/mlflow/">documentation</link>.</text>
+            </text_group>
+            <buttons>
+                <button href="https://docs.databricks.com/aws/en/mlflow/">Get Started with MLflow</button>
+                <button href="https://login.databricks.com/?dbx_source=www&amp;intent=SIGN_UP">Try Databricks for free</button>
+                <button href="/company/contact">Schedule a demo</button>
+            </buttons>
+            <image src="https://www.databricks.com/sites/default/files/2023-03/managedmlfow-header.svg?v=1678448848" alt="Managed MLflow header image"/>
+        </content>
+    </section>
+
+    <section name="AssetPromoCard - The Big Book of Generative AI">
+        <layout_description>
+            Single row card with an image on the left and text with a CTA button on the right.
+            Recommended characters per line for text: N/A (depends on screen size and card width)
+        </layout_description>
+        <content>
+            <image src="https://www.databricks.com/sites/default/files/2024-04/2024-04-eb-big-book-genai-pc-107x107-2x.png?v=1713507726" alt="Databricks GenAI book cover"/>
+            <text_group>
+                <text type="heading4_bold">The Big Book of Generative AI</text>
+                <text type="body4">Best practices for building production-quality generative AI applications</text>
+            </text_group>
+            <button href="/resources/ebook/big-book-generative-ai?itm_data=product-managedmlflow-pc-bbgenaiebook">Read Now</button>
+        </content>
+    </section>
+
+    <section name="WhatIsManagedMLflow">
+        <layout_description>
+            Single column text block.
+            Recommended characters per line for text: ~80-100
+        </layout_description>
+        <content>
+            <text type="heading2">What is Managed MLflow?</text>
+            <text type="body4">Managed MLflow on Databricks delivers state-of-the-art experiment tracking, observability, performance evaluation, and model management for the full spectrum of machine learning and AI, from classical models and deep learning to generative AI applications and agents, all on the Databricks lakehouse. MLflow's unified AI and ML platform eliminates the need to manage and integrate separate, specialized platforms for your generative AI initiatives and your classical machine learning or deep learning workflows. Managed MLflow is built on the flexible foundation of open-source MLflow and fortified with enterprise-grade reliability, security, and scalability. This empowers you to confidently build high quality models and agents using your preferred tools from the entire AI/ML ecosystem, all while ensuring your AI data is protected.<br/>
+<b><link href="https://docs.databricks.com/aws/en/mlflow/">Get started with Managed MLflow for free, in less than five minutes.</link></b></text>
+        </content>
+    </section>
+
+    <section name="GenerativeAIBenefitsAndFeatures">
+        <layout_description>
+            Benefits: Alternating text and image blocks. Each block takes full width on mobile and ~half width on desktop. Text blocks have a heading and a paragraph. Image blocks have an alt attribute. Recommended characters per line for text: ~60-80. Approx 500 chars per block.
+            Features: Two-column grid of cards. Each card has an icon, a title, and a description (often as bullet points). Recommended characters per line for text: N/A (depends on card width).
+        </layout_description>
+        <content>
+            <text type="heading2">Ship high-quality generative AI apps &amp; agents, fast</text>
+            <text type="body4">Managed MLflow accelerates your path to production for generative AI applications and agents, while helping you achieve top-notch performance. From initial debugging with powerful tracing capabilities and robust prompt management for reproducible experimentation, to comprehensive evaluation using LLM-assisted and human feedback, and finally, confident deployment and monitoring with deep observability—MLflow provides the end-to-end tools you need to succeed with generative AI.</text>
+            <item>
+                <image src="https://via.placeholder.com/600x400.png?text=Advanced+GenAI+Observability" alt="Advanced Generative AI Observability placeholder image"/>
+                <text_group>
+                    <text type="heading3">Comprehensive AI Observability with Tracing and Real-time Monitoring</text>
+                    <text type="paragraph">Debug and iterate on your generative AI applications effortlessly—both in development and production—by leveraging end-to-end tracing that captures crucial details like prompts, retrievals, and tool calls. Maintain high standards in production with continuous online quality monitoring. Gain real-time visibility with rich dashboards and detailed trace explorers in MLflow's powerful observability UI. Configure automated LLM-as-a-judge alerts to swiftly identify and address issues.</text>
+                </text_group>
+            </item>
+            <item>
+                <image src="https://via.placeholder.com/600x400.png?text=Advanced+GenAI+Evaluation" alt="Advanced Generative AI Evaluation placeholder image"/>
+                <text_group>
+                    <text type="heading3">Intelligent Evaluations for Enhanced AI Quality</text>
+                    <text type="paragraph">Systematically evaluate and enhance application performance with MLflow's suite of generative AI evaluation capabilities. MLflow makes generative AI evaluation intuitive, allowing you to easily collect and record LLM judge and human feedback directly on traces. Further refine your applications by creating evaluation datasets from production logs to adapt to evolving user behavior. With Managed MLflow, you gain access to hosted LLM judges with industry-leading quality, which can be easily tuned and customized according to your use cases.</text>
+                </text_group>
+            </item>
+            <item>
+                 <image src="https://via.placeholder.com/600x400.png?text=Robust+Prompt+Management" alt="Prompt Engineering and Management placeholder image"/>
+               <text_group>
+                    <text type="heading3">Prompt Management and Agent Versioning</text>
+                    <text type="paragraph">Effectively manage the complete lifecycle of your generative AI applications, from individual prompts to entire agents. Developers can version, compare, iterate on, and discover prompt templates directly through the MLflow UI. Beyond prompts, MLflow enables holistic versioning of your agents, capturing their associated code, parameters, and performance metrics for each iteration. Reuse prompts across multiple versions of your agent or application code, and view rich lineage identifying which versions are using each prompt. This centralized management of both prompts and agents complements Git, providing full lifecycle capabilities for all your generative AI assets. This ensures that evaluation and observability data are linked to specific prompt and agent/application versions for better governance and reproducibility.</text>
+                </text_group>
+            </item>
+            <feature_card>
+                <image src="https://via.placeholder.com/80x80.png?text=GenAI+Trace" alt="GenAI Tracing and Debugging icon placeholder"/>
+                <text type="title">MLflow Tracing</text>
+                <text type="description_points">
+                    <point>END-TO-END OBSERVABILITY: Capture inputs, outputs, and step-by-step execution—prompts, retrievals, tool calls—for generative AI apps.</point>
+                    <point>OPENTELEMETRY COMPATIBLE: Ingest traces from any OpenTelemetry source and export to any compatible tool, providing you total ownership and portability of your generative AI data.</point>
+                    <point>DETAILED SPAN DEBUGGING: Dive deep into trace details with an intuitive UI for effective debugging.</point>
+                    <point>ANNOTATION CAPABILITIES: Add notes and context directly to traces for collaborative analysis.</point>
+                    <point>COST & LATENCY TRACKING: Monitor operational metrics alongside performance.</point>
+                    <point>ADVANCED SEARCH & FILTERING: Quickly find relevant traces with powerful search and filtering options.</point>
+                    <point>CONVERSATION GROUPING: Easily group traces by chat conversation or user for streamlined analysis.</point>
+                    <point>TIMELINE VIEW: Refreshed UI that automatically extracts and highlights the most relevant findings.</point>
+                    <point>TRACE COMPARISON VIEW: Visually compare multiple traces side-by-side in the UI to identify differences and debug regressions.</point>
+                </text>
+            </feature_card>
+            <feature_card>
+                <image src="https://via.placeholder.com/80x80.png?text=GenAI+Eval" alt="GenAI Evaluation icon placeholder"/>
+                <text type="title">MLflow Generative AI Evaluation</text>
+                <text type="description_points">
+                    <point>EVALUATION APIS: Intuitive tools for powerful agent/generative AI app evaluation.</point>
+                    <point>LLM-AS-A-JUDGE: Measure and improve application effectiveness with human-aligned, automated metrics at scale.</point>
+                    <point>HUMAN FEEDBACK: Incorporate human insight with an intuitive labeling and review experience.</point>
+                    <point>EVALUATION DATASETS: Adapt to evolving user behavior by using production traces for evaluations.</point>
+                    <point>EVALUATION SEARCH & COMPARISON: Easily search, filter, and compare evaluations in the MLflow UI based on collected LLM judge and human feedback.</point>
+                    <point>PERFORMANCE INSIGHTS: Analyze and compare evaluation runs using aggregated performance metrics in the UI to identify top-performing models and prompts.</point>
+                </text>
+            </feature_card>
+            <feature_card>
+                <image src="https://via.placeholder.com/80x80.png?text=Prompt+Mgmt" alt="Prompt Management icon placeholder"/>
+                <text type="title">MLflow Prompt Registry and Agent Versioning</text>
+                <text type="description_points">
+                    <point>PROMPT REGISTRY: Version, compare, iterate on, and discover prompt templates through the MLflow UI.</point>
+                    <point>PROMPT REUSE & LINEAGE: Reuse prompts across agent/app versions and view lineage of prompt usage.</point>
+                    <point>PROMPT OPTIMIZATION: Optimize prompts to improve performance using DSPy.</point>
+                    <point>HOLISTIC AGENT VERSIONING: Capture and version complete agent context, including code, parameters, and performance metrics for each iteration.</point>
+                    <point>GIT-BASED APP & AGENT VERSIONING: Track and manage generative AI app versions by linking evaluations, traces, and prompts to Git revisions.</point>
+                </text>
+            </feature_card>
+            <feature_card>
+                <image src="https://via.placeholder.com/80x80.png?text=GenAI+Monitor" alt="Generative AI Monitoring icon placeholder"/>
+                <text type="title">Generative AI Monitoring & Alerting</text>
+                <text type="description_points">
+                    <point>CONTINUOUS ONLINE QUALITY MONITORING: Maintain high quality standards in production with real-time tracking of key metrics.</point>
+                    <point>LLM-AS-A-JUDGE ALERTS: Proactively identify issues by configuring automated alerts using customizable, high-quality LLM judges for metrics like helpfulness, PII leakage, and toxicity.</point>
+                    <point>PRODUCTION PERFORMANCE DASHBOARDS: Gain immediate insights into application health, cost, and latency via interactive dashboards in the MLflow UI.</point>
+                    <point>CUSTOMIZED ALERTS: Define and receive alerts on custom operational or quality metrics specific to your application's needs.</point>
+                </text>
+            </feature_card>
+        </content>
+    </section>
+
+    <section name="ClassicalMLDLBenefitsAndFeatures">
+        <layout_description>
+            Benefits: Alternating text and image blocks. Each block takes full width on mobile and ~half width on desktop. Text blocks have a heading and a paragraph. Image blocks have an alt attribute. Recommended characters per line for text: ~60-80. Approx 500 chars per block.
+            Features: Two-column grid of cards. Each card has an icon, a title, and a description (often as bullet points). Recommended characters per line for text: N/A (depends on card width).
+        </layout_description>
+        <content>
+            <text type="heading2">Build and deploy powerful ML &amp; DL models at scale</text>
+            <item>
+                <image src="https://www.databricks.com/sites/default/files/2024-04/image-experiment-tracking.png?v=1712608217" alt="Experiment tracking interface"/>
+                <text_group>
+                    <text type="heading3">Comprehensive Experiment Tracking</text>
+                    <text type="paragraph">Run experiments with any ML library, framework, or language. Automatically track parameters, metrics, code, and models from each run. Securely share, manage, and compare experiment results along with corresponding artifacts and code versions, thanks to built-in integrations with the Databricks workspace and notebooks. Managed MLflow allows streamlined comparison and management of deep learning checkpoints, each tracked as an MLflow Logged Model with its own metrics and artifacts for clear lineage.</text>
+                </text_group>
+            </item>
+            <item>
+                 <image src="https://www.databricks.com/sites/default/files/2024-04/image-model-management.png?v=1712608303" alt="Model management interface"/>
+               <text_group>
+                    <text type="heading3">Streamlined Model Management & Governance</text>
+                    <text type="paragraph">Utilize one central place, the MLflow Model Registry (integrated with Unity Catalog on Databricks), to discover, share, and manage all your ML models. Collaborate on moving them from experimentation to production, integrate with approval and governance workflows and CI/CD pipelines, and monitor deployments. Managed MLflow provides enhanced performance lineage across environments, so metrics are visible across workspaces as models are promoted, ensuring robust governance.</text>
+                </text_group>
+            </item>
+            <item>
+                <image src="https://www.databricks.com/sites/default/files/2024-04/image-model-deployment.png?v=1712608345" alt="Model deployment interface"/>
+                <text_group>
+                    <text type="heading3">Flexible and Scalable Deployment</text>
+                    <text type="paragraph">Quickly deploy production models for batch inference on Apache Spark™ or as REST APIs using built-in integrations. With Managed MLflow on Databricks, operationalize and monitor production models using Databricks Model Serving for massive scale. MLflow's industry-leading packaging for classical and deep learning models includes weights, code, and software dependencies, ensuring seamless deployment. Orchestrate evaluation and production deployment from a centralized UI with UC Model Registry Deployment Jobs.</text>
+                </text_group>
+            </item>
+            <feature_card>
+                <image src="https://www.databricks.com/sites/default/files/2023-02/icon-orange-Data-Parser-Normalizer-ETL-ELT.svg?v=1677515625" alt="MLflow Tracking icon"/>
+                <text type="title">MLflow Experiment Tracking</text>
+                <text type="description_points">
+                    <point>AUTOMATED LOGGING: Log parameters, code versions, metrics, and artifacts for each run (Python, REST, R, Java API).</point>
+                    <point>DEEP LEARNING CHECKPOINT MANAGEMENT: Track each checkpoint as a Logged Model with its own metrics, parameters, and artifacts.</point>
+                    <point>EXPERIMENT MANAGEMENT: Create, secure, organize, search, and visualize experiments with access control.</point>
+                    <point>REPRODUCIBILITY: Automatically capture source code and environment for each run.</point>
+                </text>
+            </feature_card>
+            <feature_card>
+                <image src="https://www.databricks.com/sites/default/files/2023-02/primary-icon-orange-model-registry.svg?v=1677515625" alt="MLflow Model Registry icon"/>
+                <text type="title">MLflow Model Registry & Governance</text>
+                <text type="description_points">
+                    <point>CENTRAL MODEL STORE: Register, discover, and manage models in a central repository.</point>
+                    <point>MODEL VERSIONING & STAGES: Manage model lifecycle (staging, production, archived) with version control.</point>
+                    <point>UNITY CATALOG INTEGRATION: [Managed MLflow] Govern models with UC, including lineage and access control.</point>
+                    <point>APPROVAL WORKFLOWS: Implement review and approval processes for model transitions.</point>
+                </text>
+            </feature_card>
+            <feature_card>
+                <image src="https://www.databricks.com/sites/default/files/2023-02/primary-icon-orange-data-lineage.svg?v=1677515625" alt="MLflow Model Deployment icon"/>
+                <text type="title">MLflow Model Deployment</text>
+                <text type="description_points">
+                    <point>FLEXIBLE DEPLOYMENT: Deploy models to various targets (batch, streaming, REST APIs).</point>
+                    <point>DATABRICKS MODEL SERVING: [Managed MLflow] One-click scalable real-time serving with GPU support.</point>
+                    <point>STANDARD MODEL FORMAT: Package models with dependencies for portability.</point>
+                    <point>CI/CD INTEGRATION: Automate model deployment pipelines.</point>
+                </text>
+            </feature_card>
+             <feature_card>
+                <image src="https://via.placeholder.com/80x80.png?text=MLflow+Recipes" alt="MLflow Recipes icon placeholder"/>
+                <text type="title">MLflow Recipes (Pipelines)</text>
+                <text type="description_points">
+                    <point>PRODUCTION-READY PIPELINES: Predefined templates for common ML tasks (ingestion, featurization, training, evaluation).</point>
+                    <point>CUSTOMIZABLE STEPS: Adapt recipes to specific project needs.</point>
+                    <point>END-TO-END WORKFLOWS: Automate and manage the entire MLOps pipeline.</point>
+                </text>
+            </feature_card>
+        </content>
+    </section>
+
+    <section name="WhatMakesMLflowUnique">
+        <layout_description>
+            Alternating text and image blocks. Each block takes full width on mobile and ~half width on desktop.
+            Text blocks have a heading and a paragraph.
+            Image blocks have an alt attribute.
+            Recommended characters per line for text: ~60-80
+            Pattern: Text on left, image on right, then image on left, text on right. Approx 500 chars per block.
+        </layout_description>
+        <content>
+            <text type="heading2">What makes MLflow unique?</text>
+            <item>
+                <image src="https://via.placeholder.com/600x400.png?text=Unified+MLOps+Platform" alt="Unified MLOps Platform placeholder image"/>
+                <text_group>
+                    <text type="heading3">Unified, End-to-End MLOps and AI Observability</text>
+                    <text type="paragraph">Streamline your AI and ML workflows with a cohesive platform that standardizes the entire development and deployment lifecycle for your cutting-edge generative AI applications and machine learning models. MLflow provides robust support for generative AI tracing, prompt management, rich LLM-as-a-judge evaluations, and continuous AI quality monitoring for production deployments. For classical ML, MLflow offers comprehensive experiment tracking, model packaging, collaborative model management, and deployment solutions for batch and real-time inference. This unified platform delivers a consistent, simplified experience, accelerating collaboration and innovation by removing the friction of integrating multiple tools.</text>
+                </text_group>
+            </item>
+            <item>
+                 <image src="https://via.placeholder.com/600x400.png?text=Enterprise+Security+%26+Governance+on+Databricks" alt="Enterprise Security and Governance on Databricks platform placeholder image"/>
+               <text_group>
+                    <text type="heading3">Enterprise-Grade Security &amp; Governance on a Unified Data &amp; AI Platform</text>
+                    <text type="paragraph">As a core component of the Databricks Data Intelligence Platform, Managed MLflow provides more than just MLOps; it's your gateway to a comprehensive AI development experience. Deep integrations with the broader Mosaic AI product suite enable you to build high-quality training datasets with consistent, reusable features from Feature Store, accelerate model development with robust AI finetuning and AutoML capabilities, build powerful RAG applications using Vector Search, productionize any model with scalable Model Serving, and secure your generative AI deployments with AI Gateway. All of this is underpinned by Databricks Unity Catalog, giving you centralized governance over every AI asset—from data and models to agents and applications—ensuring compliance and control as you innovate.</text>
+                </text_group>
+            </item>
+            <item>
+                <image src="https://via.placeholder.com/600x400.png?text=Open+%26+Extensible+Ecosystem" alt="Open and Extensible Ecosystem placeholder image"/>
+                <text_group>
+                    <text type="heading3">Open, Flexible, and Extensible</text>
+                    <text type="paragraph">Maintain agility and avoid being locked into a narrow set of tools. MLflow's open-source core and extensible architecture allow you to use your preferred frameworks, libraries, and languages. Managed MLflow seamlessly integrates with a rich ecosystem of data sources, ML / AI tools, and deployment solutions. This flexibility ensures that Managed MLflow can adapt to your existing stack and evolve with your future needs, supporting innovation across your entire AI portfolio.</text>
+                </text_group>
+            </item>
+        </content>
+    </section>
+
+    <section name="ComparingMLflowOfferings">
+        <layout_description>
+            Table with 3 columns. First column for feature category/name, second for "Open Source MLflow", third for "Managed MLflow on Databricks".
+            Table cells contain text or checkmarks (represented by empty cells if not applicable, or text like "Self-hosted"/"Fully managed").
+            Recommended characters per line for text: N/A (fits within table cells)
+        </layout_description>
+        <content>
+            <text type="heading2">Comparing MLflow offerings</text>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Open Source MLflow</th>
+                        <th>Managed MLflow on Databricks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td type="category_header">Experiment Tracking</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MLflow tracking API</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>MLflow tracking server</td>
+                        <td>Self-hosted</td>
+                        <td>Fully managed</td>
+                    </tr>
+                    <tr>
+                        <td>Notebooks integration</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Workflows integration</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td type="category_header">Reproducible Projects</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MLflow Projects</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Git and Conda integration</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Scalable cloud/clusters for project runs</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td type="category_header">Model Management</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>MLflow Model Registry</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Model versioning</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>ACL-based stage transition</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>CI/CD workflow integrations</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td type="category_header">Flexible Deployment</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Built-in batch inference</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>MLflow Models</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Built-in streaming analytics</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td type="category_header">Security and Management</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>High availability</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Automated updates</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Role-based access control</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                </tbody>
+            </table>
+        </content>
+    </section>
+
+    <section name="HowItWorks">
+        <layout_description>
+            A main heading, followed by a subheading. Then a series of list items, each with an icon, a title, and a description.
+            Recommended characters per line for text: N/A (depends on item width)
+        </layout_description>
+        <content>
+            <text type="heading2">How Managed MLflow Works</text>
+            <text type="body_bold">Managed MLflow provides an integrated, end-to-end MLOps platform for the full AI lifecycle:</text>
+            <how_it_works_item>
+                <image src="https://www.databricks.com/sites/default/files/2024-04/icon-experiment-tracking.svg?v=1712609294" alt="Experiment Tracking icon"/>
+                <text type="title">Experiment & Track</text>
+                <text type="description">Log parameters, code versions, metrics, and artifacts for every run. Compare and visualize results across experiments for both classical ML and generative AI development. Manage and version prompts and trace the execution of your generative AI applications.</text>
+            </how_it_works_item>
+            <how_it_works_item>
+                <image src="https://www.databricks.com/sites/default/files/2024-04/icon-model-registry.svg?v=1712609324" alt="Model Registry icon"/>
+                <text type="title">Manage & Govern Models</text>
+                <text type="description">Use the MLflow Model Registry, integrated with Unity Catalog, to manage the lifecycle of all your models. Version models, transition them through stages (e.g., staging, production), and maintain comprehensive lineage and governance.</text>
+            </how_it_works_item>
+             <how_it_works_item>
+                <image src="https://via.placeholder.com/80x80.png?text=GenAI+Lifecycle" alt="MLflow for GenAI Lifecycle icon placeholder"/>
+                <text type="title">MLflow for Generative AI Lifecycle</text>
+                <text type="description">Develop, evaluate, and monitor your generative AI applications. Utilize MLflow Tracking for inputs/outputs, and traces. Use the Prompt Registry for prompt versioning and management. Employ LLM-as-a-judge and human feedback for evaluation. Securely deploy and monitor with the AI Gateway and trace dashboarding.</text>
+            </how_it_works_item>
+            <how_it_works_item>
+                <image src="https://www.databricks.com/sites/default/files/2024-04/icon-model-deployment.svg?v=1712609354" alt="Model Deployment icon"/>
+                <text type="title">Deploy & Serve</text>
+                <text type="description">Deploy models for batch inference or as scalable REST APIs via Databricks Model Serving. Package models with all dependencies for portability and integrate with CI/CD pipelines for automated deployment and monitoring.</text>
+            </how_it_works_item>
+        </content>
+    </section>
+
+    <section name="Resources">
+        <layout_description>
+            Main title "Resources". Below this, content is organized into up to 3 columns (Blogs, Videos, Tutorials, Webinars, eBooks, Notebooks, Documentation). Each column has a heading and a list of links.
+            Recommended characters per line for text: N/A (fits within link text)
+        </layout_description>
+        <content>
+            <text type="heading2">Resources for Managed MLflow</text>
+            <resource_column title="Blogs">
+                 <link href="https://www.databricks.com/blog/2024/XX/XX/introducing-mlflow-3-genai-capabilities.html">Introducing Managed MLflow: Powering the Generative AI Lifecycle</link>
+                <link href="https://www.databricks.com/blog/2020/04/15/databricks-extends-mlflow-model-registry-with-enterprise-features.html">Databricks Extends MLflow Model Registry With Enterprise Features</link>
+                <link href="https://www.databricks.com/blog/2020/02/18/how-to-display-model-metrics-in-dashboards-using-the-mlflow-search-api.html">How to Display Model Metrics in Dashboards Using the MLflow Search API</link>
+                <link href="https://www.databricks.com/blog/2020/01/16/automate-deployment-and-testing-with-databricks-notebook-mlflow.html">Automate Deployment and Testing With Databricks Notebook and MLflow</link>
+                <link href="https://www.databricks.com/blog/2019/10/17/introducing-the-mlflow-model-registry.html">Introducing the MLflow Model Registry</link>
+                <link href="https://www.databricks.com/blog/2019/09/24/a-guide-to-mlflow-talks-at-spark-ai-summit-2019-europe.html">A Guide to MLflow Talks at Spark and AI Summit 2019 Europe</link>
+                <link href="https://www.databricks.com/blog/2019/09/18/productionizing-machine-learning-from-deployment-to-drift-detection.html">Productionizing Machine Learning: From Deployment to Drift Detection</link>
+                <link href="https://www.databricks.com/blog/2019/06/17/detecting-bias-with-shap.html">Detecting Bias With SHAP</link>
+                <link href="https://www.databricks.com/blog/2019/06/07/hyperparameter-tuning-with-mlflow-apache-spark-mllib-and-hyperopt.html">Hyperparameter Tuning With MLflow, Apache Spark MLlib and Hyperopt</link>
+                <link href="https://www.databricks.com/blog/2019/04/18/a-guide-to-mlflow-talks-at-spark-ai-summit-2019.html">A Guide to MLflow Talks at Spark and AI Summit 2019</link>
+                <link href="https://www.databricks.com/blog/2018/09/12/mlflow-on-demand-webinar-and-faq-now-available.html">MLflow On-Demand Webinar and FAQ Now Available</link>
+                <link href="https://www.databricks.com/blog/2018/06/05/introducing-mlflow-an-open-source-machine-learning-platform.html?itm_data=product-managed-mlflow">Introducing MLflow: An Open Source Machine Learning Platform</link>
+            </resource_column>
+            <resource_column title="Videos">
+                <link href="https://www.youtube.com/watch?v=placeholder_genai_video">Managed MLflow: Generative AI Features Overview</link>
+                <link href="https://www.databricks.com/session/how-to-utilize-mlflow-and-kubernetes-to-build-an-enterprise-ml-platform">Comcast: How to Utilize MLflow and Kubernetes to Build an Enterprise ML Platform</link>
+                <link href="https://www.databricks.com/session/scaling-ride-hailing-with-machine-learning-on-mlflow">Gojek: Scaling Ride-Hailing With Machine Learning on MLflow</link>
+                <link href="https://www.databricks.com/session/data-driven-transformation-leveraging-big-data-at-showtime-with-apache-spark">Showtime: Data-Driven Transformation: Leveraging Big Data at Showtime With Apache Spark</link>
+                <link href="https://www.databricks.com/session/best-practices-for-hyperparameter-tuning-with-mlflow">Best Practices for Hyperparameter Tuning With MLflow</link>
+                <link href="https://www.youtube.com/watch?v=8QL8N6BAREc">Advanced Hyperparameter Optimization for Deep Learning With MLflow</link>
+                <link href="https://www.databricks.com/session/scalable-natural-language-processing-with-r">RStudio: Managing the Machine Learning Lifecycle With MLflow and R</link>
+                <link href="https://www.databricks.com/session/splice-machines-use-of-apache-spark-and-mlflow">Splice Machine's Use of Apache Spark and MLflow</link>
+                <link href="https://www.databricks.com/session/moving-a-fraud-fighting-random-forest-from-scikit-learn-to-spark-with-mllib-mlflow-and-jupyter">Kount: Moving a Fraud-Fighting Random Forest From scikit-learn to Spark With MLlib</link>
+            </resource_column>
+            <resource_column title="Tutorials">
+                <link href="https://docs.databricks.com/aws/en/mlflow/mlflow3-genai-workflow.html">Tutorial: Building Your First Generative AI App with Managed MLflow</link>
+                <link href="https://www.databricks.com/blog/2019/05/02/detecting-financial-fraud-at-scale-with-decision-trees-and-mlflow-on-databricks.html">Detecting Financial Fraud at Scale With Decision Trees and MLflow on Databricks</link>
+                <link href="https://www.databricks.com/blog/2019/04/30/understanding-dynamic-time-warping.html">Using Dynamic Time Warping and MLflow to Detect Sales Trends (Part 1)</link>
+                <link href="https://www.databricks.com/blog/2019/04/30/using-dynamic-time-warping-and-mlflow-to-detect-sales-trends.html">Using Dynamic Time Warping and MLflow to Detect Sales Trends (Part 2)</link>
+                <link href="https://www.databricks.com/blog/2018/08/23/how-to-use-mlflow-to-experiment-a-keras-network-model-binary-classification-for-movie-reviews.html">How to Use MLflow to Experiment a Keras Network Model: Binary Classification for Movie Reviews</link>
+                <link href="https://www.databricks.com/blog/2018/07/10/how-to-use-mlflow-tensorflow-and-keras-with-pycharm.html">How to Use MLflow, TensorFlow and Keras With PyCharm</link>
+                <link href="https://www.databricks.com/blog/2018/09/21/how-to-use-mlflow-to-reproduce-results-and-retrain-saved-keras-ml-models.html">How to Use MLflow to Reproduce Results and Retrain Saved Keras ML Models</link>
+            </resource_column>
+            <resource_column title="Webinars">
+                 <link href="https://www.databricks.com/p/webinar/mlflow-3-deep-dive">Deep Dive into Managed MLflow and Generative AI</link>
+                <link href="https://www.databricks.com/p/webinar/automl-rapid-simplified-machine-learning-for-everyone?itm_data=productmlflow-link-automlwebinar">AutoML Rapid, Simplified Machine Learning Everyone</link>
+                <link href="https://www.databricks.com/p/webinar/mlops-virtual-event">MLOps Virtual Event: Standardizing MLOps at Scale</link>
+                <link href="https://www.databricks.com/p/webinar/automating-the-ml-lifecycle-with-databricks-machine-learning?itm_data=product-resources-automatingMLlifecycle">Automating the ML Lifecycle With Databricks Machine Learning</link>
+                <link href="https://www.databricks.com/blog/2019/07/18/automated-hyperparameter-tuning-scaling-and-tracking-on-demand-webinar-and-faqs-now-available.html">Automated Hyperparameter Tuning, Scaling and Tracking on Databricks</link>
+                <link href="https://www.databricks.com/blog/2019/06/26/whats-new-with-mlflow-on-demand-webinar-and-faqs-now-available.html">What's New With MLflow? On-Demand Webinar and FAQs Now Available</link>
+                <link href="https://www.databricks.com/blog/2019/04/04/managing-the-complete-machine-learning-lifecycle-on-demand-webinar-now-available.html">Managing the Complete Machine Learning Lifecycle: On-Demand Webinar Now Available</link>
+                <link href="https://pages.databricks.com/MLflow-ask-experts.html">Understanding MLflow: Ask the Experts</link>
+                <link href="https://www.databricks.com/p/webinar/operationalizing-machine-learning-at-scale">MLOps Virtual Event</link>
+            </resource_column>
+            <resource_column title="eBooks">
+                <link href="/resources/ebook/standardizing-the-ml-lifecycle">Standardizing the Machine Learning Lifecycle</link>
+                <link href="/resources/ebook/big-book-of-machine-learning-use-cases">Four Real-Life Machine Learning Use Cases</link>
+                <link href="/resources/ebook/big-book-of-machine-learning-use-cases">The Big Book of Machine Learning Use Cases</link>
+            </resource_column>
+            <resource_column title="Notebooks">
+                <link href="https://docs.databricks.com/aws/en/mlflow/mlflow3-genai-workflow.html#example-notebook">Managed MLflow Generative AI Workflow Example Notebook</link>
+                <link href="https://docs.databricks.com/applications/mlflow/quick-start.html?_gl=1%2Aw352cv%2A_gcl_aw%2AR0NMLjE2NzU0NTgxMzUuQ2p3S0NBaUFfdktlQmhBZEVpd0FGYl9uclJEdEZzSXlVYUQwN1FKSjhldVZsTnk2Q0RzeVlpeXl1VEp3d2VVMThCcHM1akl6ZEU5TFNob0N6ZkVRQXZEX0J3RQ..&amp;_ga=2.61800484.964201512.1678830828-e1157c66-eb17-44cd-833f-ee8728f670dc&amp;_gac=1.158117448.1675458135.CjwKCAiA_vKeBhAdEiwAFb_nrRDtFsIyUaD07QJJ8euVlNy6CDsyYiyyuTJwweU18Bps5jIzdE9LShoCzfEQAvD_BwE#mlflow-mlflow-quick-start-python">MLflow Quick Start in Python</link>
+                <link href="https://docs.databricks.com/applications/mlflow/quick-start.html?_gl=1%2Axiad9n%2A_gcl_aw%2AR0NMLjE2NzU0NTgxMzUuQ2p3S0NBaUFfdktlQmhBZEVpd0FGYl9uclJEdEZzSXlVYUQwN1FKSjhldVZsTnk2Q0RzeVlpeXl1VEp3d2VVMThCcHM1akl6ZEU5TFNob0N6ZkVRQXZEX0J3RQ..&amp;_ga=2.62407588.964201512.1678830828-e1157c66-eb17-44cd-833f-ee8728f670dc&amp;_gac=1.151307083.1675458135.CjwKCAiA_vKeBhAdEiwAFb_nrRDtFsIyUaD07QJJ8euVlNy6CDsyYiyyuTJwweU18Bps5jIzdE9LShoCzfEQAvD_BwE#mlflow-mlflow-quick-start-r">MLflow Quick Start in R</link>
+                <link href="https://docs.databricks.com/applications/mlflow/quick-start.html?_gl=1%2Aw352cv%2A_gcl_aw%2AR0NMLjE2NzU0NTgxMzUuQ2p3S0NBaUFfdktlQmhBZEVpd0FGYl9uclJEdEZzSXlVYUQwN1FKSjhldVZsTnk2Q0RzeVlpeXl1VEp3d2VVMThCcHM1akl6ZEU5TFNob0N6ZkVRQXZEX0J3RQ..&amp;_ga=2.61800484.964201512.1678830828-e1157c66-eb17-44cd-833f-ee8728f670dc&amp;_gac=1.158117448.1675458135.CjwKCAiA_vKeBhAdEiwAFb_nrRDtFsIyUaD07QJJ8euVlNy6CDsyYiyyuTJwweU18Bps5jIzdE9LShoCzfEQAvD_BwE#mlflow-mlflow-quick-start-scala">MLflow Quick Start in Scala</link>
+                <link href="https://pages.databricks.com/rs/094-YMS-629/images/financial-fraud-detection-decision-tree.html">Financial Fraud Detection Using Decision Tree Machine Learning Models</link>
+                <link href="https://pages.databricks.com/rs/094-YMS-629/images/dtw-mlflow-sales.zip">Using Dynamic Time Warping and MLflow to Detect Sales Trends (dbc format)</link>
+            </resource_column>
+            <resource_column title="Documentation">
+                <link href="https://docs.databricks.com/aws/en/mlflow/mlflow-3-install.html">Managed MLflow Beta Documentation</link>
+                <link href="https://mlflow.org/docs/latest/mlflow-3/">Managed MLflow OSS Documentation</link>
+                <link href="https://docs.databricks.com/applications/mlflow/tracking.html">Tracking Training Runs</link>
+                <link href="https://docs.databricks.com/applications/mlflow/models.html">Saving and Deploying Models</link>
+                <link href="https://docs.databricks.com/applications/mlflow/projects.html">Reproducible Runs</link>
+                <link href="https://docs.databricks.com/applications/mlflow/model-registry.html">Managing Models</link>
+            </resource_column>
+        </content>
+    </section>
+
+    <section name="ReadyToGetStarted">
+        <layout_description>
+            Centered text "Ready to get started?" followed by two buttons: "Try Databricks for free" and "Quick Start Guide". Dark background.
+            Recommended characters per line for text: N/A
+        </layout_description>
+        <content>
+            <text type="main_message">Ready to get started with Managed MLflow?</text>
+            <buttons>
+                <button href="https://login.databricks.com/?dbx_source=www&amp;intent=SIGN_UP">Try Databricks for free</button>
+                <button href="https://docs.databricks.com/aws/en/mlflow/">Managed MLflow Quick Start</button>
+            </buttons>
+        </content>
+    </section>
+</page_structure> 
