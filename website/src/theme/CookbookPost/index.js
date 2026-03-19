@@ -88,15 +88,23 @@ function resolveNav(permalink, sidebar) {
     }
   }
 
-  // Build the flat ordered list: top-level items with group
-  // children inserted right after their parent.
-  const ordered = [];
-  for (const item of items) {
-    if (childSet.has(item.permalink)) continue;
-    ordered.push(item);
-    // If this item is a group parent, insert children in order.
+  // Separate ungrouped top-level items from group parents so that
+  // groups appear at the end, matching the sidebar render order.
+  const topLevel = items.filter((it) => !childSet.has(it.permalink));
+  const ungrouped = topLevel.filter(
+    (it) => !COOKBOOK_SEQUENCES.some((seq) => seq[0] === it.permalink),
+  );
+  const groupParents = topLevel.filter((it) =>
+    COOKBOOK_SEQUENCES.some((seq) => seq[0] === it.permalink),
+  );
+
+  // Build the flat ordered list: ungrouped first, then each group
+  // parent followed by its children.
+  const ordered = [...ungrouped];
+  for (const parent of groupParents) {
+    ordered.push(parent);
     for (const seq of COOKBOOK_SEQUENCES) {
-      if (seq[0] === item.permalink) {
+      if (seq[0] === parent.permalink) {
         for (let i = 1; i < seq.length; i++) {
           const child = items.find((it) => it.permalink === seq[i]);
           if (child) ordered.push(child);

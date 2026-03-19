@@ -51,6 +51,19 @@ function CookbookSidebar({ sidebar }) {
     itemsByPermalink[item.permalink] = item;
   }
 
+  // Separate ungrouped items from group parents, keeping original order
+  // within each bucket, then render ungrouped first and groups last.
+  const topLevel = sidebar.items.filter(
+    (item) => !CHILD_PERMALINKS.has(item.permalink),
+  );
+  const ungrouped = topLevel.filter(
+    (item) => !COOKBOOK_GROUPS[item.permalink],
+  );
+  const grouped = topLevel.filter(
+    (item) => !!COOKBOOK_GROUPS[item.permalink],
+  );
+  const orderedItems = [...ungrouped, ...grouped];
+
   return (
     <aside className="cookbook-sidebar hidden md:block sticky top-20 self-start w-72 shrink-0 overflow-y-auto max-h-[calc(100vh-6rem)] hidden-scrollbar">
       <nav>
@@ -58,9 +71,7 @@ function CookbookSidebar({ sidebar }) {
           {sidebar.title}
         </div>
         <ul className="flex flex-col gap-0.5">
-          {sidebar.items
-            .filter((item) => !CHILD_PERMALINKS.has(item.permalink))
-            .map((item) => {
+          {orderedItems.map((item) => {
               const isActive = location.pathname === item.permalink;
               const children = COOKBOOK_GROUPS[item.permalink];
               return (
