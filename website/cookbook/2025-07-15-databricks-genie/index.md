@@ -5,25 +5,29 @@ description: A complete pipeline for tracing, evaluating, and improving a Databr
 tags: [databricks, genie, evaluation, tracing, genai]
 ---
 
-[Databricks Genie](https://docs.databricks.com/en/genie/index.html) is a text-to-SQL AI assistant that lets business users ask natural-language questions about their data. A **Genie space** wraps a set of [Unity Catalog](https://docs.databricks.com/en/data-governance/unity-catalog/index.html) tables, text instructions, SQL expressions, and benchmarks that tell Genie how to translate questions into SQL. This cookbook series shows you how to evaluate and improve a Genie space using MLflow.
+![Genie traces with assessment columns showing evaluation results](/img/cookbook/databricks-genie/evaluation-assessment-columns.png)
+
+[Databricks Genie](https://docs.databricks.com/en/genie/index.html) is a text-to-SQL AI assistant that lets business users ask natural-language questions about their data. A **Genie space** wraps a set of [Unity Catalog](https://docs.databricks.com/en/data-governance/unity-catalog/index.html) tables, text instructions, SQL expressions, and benchmarks that tell Genie how to translate questions into SQL. This cookbook series shows you how to evaluate and improve the quality of a Genie space's responses using MLflow.
 
 <!-- truncate -->
 
 ## Where MLflow Fits In
 
-MLflow closes the feedback loop on a Genie space:
+Genie spaces improve when you can see which conversations went wrong and why. MLflow gives you that visibility by turning each conversation into a traceable, evaluatable record:
 
-- **Tracing** -Each Genie conversation becomes an MLflow trace you can inspect, search, and compare in the MLflow UI.
-- **Evaluation** -Built-in and custom judges score every trace so you can see exactly which conversations failed and why.
+- **Tracing** - Each Genie conversation becomes an MLflow trace you can inspect, search, and compare in the MLflow UI.
+- **Evaluation** - Built-in and custom judges score every trace so you can see exactly which conversations failed and why.
 - **Improvement** - Failed traces feed into an LLM that generates copy-paste-ready fixes for the space configuration.
 
 ## Pipeline Overview
 
-| Step | Cookbook                                                          | What it does                                                                                                                                          |
-| ---- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | [Conversation Tracing Pipeline](/cookbook/genie-tracing-pipeline) | Pulls conversations from the Genie SDK and logs each one as an MLflow trace with the question, generated SQL, and response.                           |
-| 2    | [Evaluation with LLM Judges](/cookbook/genie-evaluation-judges)   | Runs built-in judges (relevance, safety) and custom Guidelines scorers on the traces to flag quality issues.                                          |
-| 3    | [Space Improvement Generator](/cookbook/genie-space-analyzer)     | Loads failed traces, extracts the Genie space config, and generates specific fixes (text instructions, SQL expressions, example queries) with an LLM. |
+Work through the three cookbooks in order. Each one builds on the output of the previous step.
+
+| Step | Cookbook | What it does |
+| ---- | ------- | ------------ |
+| 1 | [Conversation Tracing Pipeline](/cookbook/genie-tracing-pipeline) | Pulls Genie conversations and logs each one as an MLflow trace. |
+| 2 | [Evaluation with LLM Judges](/cookbook/genie-evaluation-judges) | Scores traces with built-in and custom judges to flag quality issues. |
+| 3 | [Space Improvement Generator](/cookbook/genie-space-analyzer) | Feeds failed traces into an LLM that generates fixes for the Genie space. |
 
 ## Prerequisites
 

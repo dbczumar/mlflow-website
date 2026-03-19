@@ -25,8 +25,8 @@ Point to the same MLflow experiment where the tracing pipeline logged its traces
 
 ```python
 import mlflow
+from mlflow.entities import Feedback
 from mlflow.genai.scorers import (
-    Feedback,
     Guidelines,
     RelevanceToQuery,
     RetrievalGroundedness,
@@ -133,6 +133,16 @@ eval_results = mlflow.genai.evaluate(
 ```
 
 Adjust `max_results` to evaluate more or fewer traces.
+
+## Results
+
+After evaluation, each trace has assessment columns showing pass/fail results from every scorer.
+
+![Traces with assessment columns showing judge results](/img/cookbook/databricks-genie/evaluation-assessment-columns.png)
+
+Click a trace to see the full assessment panel with scores and rationales from each judge.
+
+![Trace detail with assessment panel showing all judge scores](/img/cookbook/databricks-genie/evaluation-trace-assessments.png)
 
 ## Next Steps
 

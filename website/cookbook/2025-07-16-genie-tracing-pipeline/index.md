@@ -13,7 +13,7 @@ Once conversations are stored as traces, you can inspect them in the MLflow UI a
 
 ## Prerequisites
 
-You need a Databricks [Genie space](https://docs.databricks.com/en/genie/set-up.html) with at least a few conversations. To create one, open your Databricks workspace, click **Genie** in the sidebar, and follow the setup wizard to connect Unity Catalog tables and add instructions.
+You need a Databricks [Genie space](https://docs.databricks.com/en/genie/set-up.html) with at least a few conversations. To create one, open your Databricks workspace, click **Genie** in the sidebar, and follow the setup wizard to connect [Unity Catalog](https://docs.databricks.com/en/data-governance/unity-catalog/index.html) tables and add instructions.
 
 ```bash
 pip install "mlflow[genai]>=3.10" databricks-sdk
@@ -103,9 +103,17 @@ for convo in conversations.conversations or []:
 print(f"Logged {traced} new traces to experiment: {EXPERIMENT_NAME}")
 ```
 
-## Next Steps
+## Results
 
-Open the MLflow experiment to inspect your traces.
+Open the MLflow experiment to inspect your traces. Each row is one Genie message with the question, generated SQL, and response.
+
+![Genie conversation traces logged in MLflow](/img/cookbook/databricks-genie/tracing-traces-logged.png)
+
+Click a trace to see the full detail, including the `text_to_sql`, `sql_execution`, and `response_generation` spans.
+
+![Trace detail showing spans and outputs](/img/cookbook/databricks-genie/tracing-trace-detail.png)
+
+## Next Steps
 
 - [Evaluation with LLM Judges](/cookbook/genie-evaluation-judges) -Score the traces to find quality issues.
 - [Space Improvement Generator](/cookbook/genie-space-analyzer) -Generate fixes you can apply back to the Genie space.

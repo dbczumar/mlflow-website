@@ -157,10 +157,14 @@ else:
 
 ## Step 5: Apply Recommendations
 
+The LLM generates text instructions, SQL expressions, and example queries you can copy directly into your Genie space settings.
+
+![Updated Genie space with generated text instructions](/img/cookbook/databricks-genie/analyzer-genie-instructions.png)
+
 Review the output and apply the suggested changes to your Genie space:
 
 - Add text instructions in the Genie space settings
 - Add SQL expressions and example queries
-- Update Unity Catalog column descriptions
+- Update [Unity Catalog](https://docs.databricks.com/en/data-governance/unity-catalog/index.html) table column descriptions
 
 After applying the changes, ask your Genie space some new questions to create fresh conversations. Then re-run the [Conversation Tracing Pipeline](/cookbook/genie-tracing-pipeline) and [Evaluation](/cookbook/genie-evaluation-judges) to see if the changes improved Genie's answers.
