@@ -408,7 +408,8 @@ article .markdown ol {
 }
 
 .cookbook-page article img {
-  border-radius: 4px !important;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* GitHub stat badge styling inspired by MiniLogoCard */
